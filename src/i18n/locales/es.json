@@ -1,0 +1,209 @@
+{
+  "common": {
+    "retry": "Reintentar",
+    "loading": "Cargando…",
+    "cancel": "Cancelar",
+    "refresh": "Actualizar",
+    "skipToContent": "Saltar al contenido",
+    "opensNewTab": "se abre en una pestaña nueva"
+  },
+  "nav": {
+    "main": "Navegación principal",
+    "open": "Abrir menú de navegación",
+    "close": "Cerrar menú de navegación",
+    "dashboard": "Panel",
+    "feed": "Feed personalizado",
+    "trending": "Tendencias",
+    "favorites": "Favoritos",
+    "settings": "Ajustes",
+    "favoritesCount_one": "{{count}} favorito",
+    "favoritesCount_other": "{{count}} favoritos"
+  },
+  "account": {
+    "menu": "Menú de cuenta",
+    "logout": "Cerrar sesión"
+  },
+  "auth": {
+    "loginTitle": "Te damos la bienvenida",
+    "loginSubtitle": "Inicia sesión para ver tu panel personalizado.",
+    "signupTitle": "Crea tu cuenta",
+    "signupSubtitle": "Elige tus temas una vez y Pulse mantiene tu feed al día.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "passwordHint": "Mínimo 8 caracteres, con una letra y un número.",
+    "login": "Iniciar sesión",
+    "signup": "Crear cuenta",
+    "noAccount": "¿Eres nuevo en Pulse?",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "useDemo": "Rellenar cuenta de demostración"
+  },
+  "card": {
+    "likes": "Me gusta",
+    "rating": "Valoración"
+  },
+  "cta": {
+    "read": "Leer más",
+    "viewPost": "Ver publicación",
+    "play": "Reproducir",
+    "details": "Ver detalles"
+  },
+  "type": {
+    "news": "Noticias",
+    "recommendation": "Recomendado",
+    "social": "Social"
+  },
+  "media": {
+    "movie": "Película",
+    "music": "Música",
+    "series": "Serie"
+  },
+  "category": {
+    "technology": "Tecnología",
+    "sports": "Deportes",
+    "finance": "Finanzas",
+    "entertainment": "Entretenimiento",
+    "business": "Negocios",
+    "science": "Ciencia",
+    "health": "Salud"
+  },
+  "favorite": {
+    "add": "Añadir a favoritos: {{title}}",
+    "remove": "Quitar de favoritos: {{title}}",
+    "added": "Añadido a favoritos",
+    "removed": "Quitado de favoritos"
+  },
+  "drag": {
+    "handle": "Reordenar: {{title}}. Posición {{position}} de {{total}}",
+    "instructions": "Para reordenar, pulsa Espacio para recoger, usa las flechas para mover y pulsa Espacio para soltar. Pulsa Escape para cancelar.",
+    "lifted": "Tarjeta recogida",
+    "dropped": "Tarjeta movida a la posición {{position}} de {{total}}",
+    "cancelled": "Reordenación cancelada"
+  },
+  "dashboard": {
+    "greeting": "Hola, {{name}}",
+    "subtitle": "Esto es lo nuevo en tus temas.",
+    "topics": "Temas seguidos",
+    "favorites": "Favoritos guardados",
+    "sources": "Fuentes de contenido",
+    "topPicks": "Selección para ti",
+    "openFeed": "Abrir feed completo",
+    "trendingNow": "Tendencias ahora",
+    "seeTrending": "Ver todas las tendencias"
+  },
+  "feed": {
+    "title": "Feed personalizado",
+    "subtitle": "Noticias, recomendaciones y publicaciones sociales de los temas que sigues. Arrastra el asa de una tarjeta para reordenarla.",
+    "loadMore": "Cargar más",
+    "loadingMore": "Cargando más elementos",
+    "end": "Has llegado al final de tu feed.",
+    "resetOrder": "Restablecer orden",
+    "orderReset": "Orden restablecido"
+  },
+  "live": {
+    "on": "Actualizaciones en vivo activadas",
+    "updated": "Actualizado {{time}}",
+    "paused": "Actualizaciones en vivo en pausa",
+    "newItems_one": "{{count}} elemento nuevo",
+    "newItems_other": "{{count}} elementos nuevos"
+  },
+  "trending": {
+    "title": "Tendencias",
+    "subtitle": "Lo más destacado ahora mismo en tus temas.",
+    "news": "Noticias en tendencia",
+    "recs": "Películas y música en tendencia",
+    "social": "Publicaciones en tendencia",
+    "rank": "Puesto {{rank}}",
+    "filter": "Filtrar tendencias por tema",
+    "allTopics": "Todos los temas"
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "subtitle": "Todo lo que has guardado, de todas las fuentes. Se guarda en este dispositivo.",
+    "clear": "Borrar todo",
+    "clearTitle": "¿Borrar todos los favoritos?",
+    "clearBody_one": "Se quitará {{count}} elemento guardado. No se puede deshacer.",
+    "clearBody_other": "Se quitarán {{count}} elementos guardados. No se puede deshacer.",
+    "cleared": "Favoritos borrados"
+  },
+  "search": {
+    "title": "Buscar",
+    "label": "Buscar contenido",
+    "placeholder": "Busca noticias, películas, música y publicaciones",
+    "clear": "Borrar búsqueda",
+    "results": "Resultados de búsqueda",
+    "resultsFor": "Resultados para «{{query}}»",
+    "searching": "Buscando",
+    "minChars": "Escribe al menos 2 caracteres para buscar.",
+    "promptTitle": "Busca en todo",
+    "promptBody": "Encuentra noticias, películas, música y publicaciones sociales en un solo lugar.",
+    "recent": "Búsquedas recientes",
+    "clearRecent": "Borrar recientes",
+    "emptyTitle": "Sin resultados para «{{query}}»",
+    "emptyBody": "Revisa la ortografía o prueba una palabra más general, como el nombre de un tema.",
+    "emptyFilterTitle": "Nada en este filtro",
+    "emptyFilterBody": "Prueba otro tipo de contenido para ver el resto de resultados.",
+    "errorTitle": "La búsqueda falló",
+    "filterType": "Filtrar por tipo de contenido",
+    "all": "Todo",
+    "group": {
+      "news": "Noticias",
+      "recommendation": "Películas y música",
+      "social": "Publicaciones sociales"
+    }
+  },
+  "settings": {
+    "title": "Ajustes",
+    "subtitle": "Los cambios se guardan automáticamente en este dispositivo.",
+    "topics": "Tus temas",
+    "topicsHelp": "Elige las categorías que dan forma a tu feed, tendencias y recomendaciones.",
+    "selectedCount_one": "{{count}} tema seleccionado",
+    "selectedCount_other": "{{count}} temas seleccionados",
+    "selectAll": "Seleccionar todo",
+    "clearAll": "Quitar todo",
+    "appearance": "Apariencia",
+    "darkMode": "Modo oscuro",
+    "darkModeHelp": "Más cómodo con poca luz.",
+    "feed": "Feed",
+    "live": "Actualizaciones en vivo",
+    "liveHelp": "Busca contenido nuevo cada 30 segundos mientras esta pestaña esté abierta.",
+    "order": "Orden de tarjetas",
+    "orderHelp": "Vuelve al orden de más reciente primero tras arrastrar tarjetas.",
+    "account": "Cuenta",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "demo": "Herramientas de demostración",
+    "simulate": "Simular errores de red",
+    "simulateHelp": "Hace que todas las solicitudes fallen para probar las pantallas de error y reintento. Desactívalo para recuperarte."
+  },
+  "language": {
+    "label": "Idioma"
+  },
+  "theme": {
+    "toggle": "Modo oscuro",
+    "switchLight": "Cambiar a modo claro",
+    "switchDark": "Cambiar a modo oscuro"
+  },
+  "empty": {
+    "noCategoriesTitle": "Elige tus temas",
+    "noCategoriesBody": "Selecciona al menos una categoría y Pulse creará tu feed.",
+    "chooseTopics": "Elegir temas",
+    "feedTitle": "Aún no hay nada que mostrar",
+    "feedBody": "Ningún contenido coincide con tus temas. Actualiza o añade más temas para ampliar tu feed.",
+    "trendingTitle": "Nada en tendencia aquí",
+    "trendingBody": "Ahora mismo no hay elementos en tendencia para este tema. Prueba con todos los temas.",
+    "favoritesTitle": "Aún no hay favoritos",
+    "favoritesBody": "Toca el corazón de cualquier tarjeta para guardarla aquí. Los favoritos se quedan en este dispositivo.",
+    "favoritesFilterTitle": "No hay favoritos de este tipo",
+    "favoritesFilterBody": "Todavía no has guardado elementos de este tipo.",
+    "browseFeed": "Explorar tu feed",
+    "exploreTrending": "Ver tendencias"
+  },
+  "error": {
+    "title": "No pudimos cargar esto",
+    "generic": "Algo salió mal. Inténtalo de nuevo.",
+    "loadMoreTitle": "No se pudo cargar más",
+    "boundaryTitle": "Esta sección tuvo un problema.",
+    "partial": "Algunas fuentes no cargaron ({{sources}}). Mostramos lo que pudimos."
+  }
+}

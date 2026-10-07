@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens (RGB triplets so Tailwind opacity modifiers work). Dark theme = `.dark` on <html>. */
+:root {
+  --canvas: 241 244 243;
+  --surface: 255 255 255;
+  --raised: 233 239 237;
+  --line: 214 223 220;
+  --ink: 18 32 30;
+  --muted: 86 104 100;
+  --accent: 11 107 99;
+  --accent-ink: 255 255 255;
+  --news: 29 78 216;
+  --rec: 162 28 175;
+  --social: 180 83 9;
+  --danger: 185 28 28;
+  --success: 21 128 61;
+  --shadow: 16 40 36;
+  color-scheme: light;
+}
+
+.dark {
+  --canvas: 11 18 17;
+  --surface: 18 28 26;
+  --raised: 27 40 37;
+  --line: 44 62 58;
+  --ink: 230 239 236;
+  --muted: 154 174 169;
+  --accent: 79 209 192;
+  --accent-ink: 6 32 28;
+  --news: 138 180 255;
+  --rec: 233 163 245;
+  --social: 245 180 84;
+  --danger: 252 165 165;
+  --success: 134 239 172;
+  --shadow: 0 0 0;
+  color-scheme: dark;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  h1, h2, h3 { @apply font-display; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-accent; }
+  ::selection { background: rgb(var(--accent) / 0.25); }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition-colors
+      disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary { @apply btn bg-accent text-accent-ink hover:opacity-90; }
+  .btn-secondary { @apply btn border border-line bg-surface text-ink hover:bg-raised; }
+  .btn-ghost { @apply btn text-muted hover:bg-raised hover:text-ink; }
+  .btn-danger { @apply btn border border-danger/40 bg-surface text-danger hover:bg-danger/10; }
+  .input {
+    @apply w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm text-ink placeholder:text-muted/80;
+  }
+}
+
+.sr-only-focusable:not(:focus):not(:focus-within) {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+@keyframes shimmer { 100% { transform: translateX(100%); } }
+.skeleton { position: relative; overflow: hidden; background: rgb(var(--raised)); }
+.skeleton::after {
+  content: ''; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgb(var(--surface) / 0.55), transparent);
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(.75); } }
+.pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
